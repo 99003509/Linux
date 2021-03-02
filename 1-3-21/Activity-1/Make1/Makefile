@@ -1,4 +1,4 @@
-TARGET=hall.out
+TARGET=sall.out
 OBJS=test.o src/Mystring.o src/Bitwise.o src/Myutils.o
 TOPDIR=${PWD}
 
