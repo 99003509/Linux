@@ -1,5 +1,5 @@
 TARGET=hall.out
-OBJS=test.o src/mystring.o src/bitwise.o src/myutils.o
+OBJS=test.o src/Mystring.o src/Bitwise.o src/Myutils.o
 TOPDIR=${PWD}
 
 CFLAGS=-I${TOPDIR}/include

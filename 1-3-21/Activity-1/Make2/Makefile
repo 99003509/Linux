@@ -1,20 +1,20 @@
 TARGET=sall.out
-OBJS=test.o src/mystring.o  src/bitmask.o src/myutils.o
+OBJS=test.o src/Mystring.o  src/Bitmask.o src/Myutils.o
 
 TOPDIR=${PWD}
 CFLAGS=-I${TOPDIR}/include
-LDFLAGS=-lmystring -lmyutils -lbitmask
+LDFLAGS=-lMystring -lMyutils -lBitmask
 LIBPATH=${PWD}
 
 all:sall.out
 
-sall.out:test.o libmystring.a libmyutils.a libbitmask.a
+sall.out:test.o libMystring.a libMyutils.a libBitmask.a
 	gcc -L${LIBPATH} $< -o $@ ${LDFLAGS} 
-libmystring.a:src/mystring.o 
+libMystring.a:src/Mystring.o 
 	ar rc $@ $^
-libmyutils.a:src/myutils.o 
+libMyutils.a:src/Myutils.o 
 	ar rc $@ $^
-libbitmask.a:src/bitmask.o 
+libBitmask.a:src/Bitmask.o 
 	ar rc $@ $^
 %.o:src/%.c include/%.h
 
