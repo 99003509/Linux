@@ -3,17 +3,17 @@
 
 int checkpalindrome(char *str)
 {
-     int i=0,n=strlen(str),a=0;
+     int i=0,n=strlen(str),b=0;
     if(i<n/2)
     {
          if(str[i]==str[n-i-1])
-    	a++;
+    	b++;
     	i++;
     	checkpalindrome(str);
 	}
 	else
 	{
-		if(a==i)
+		if(b==i)
         return 1;
         else
         return 0;
