@@ -7,7 +7,7 @@ CFLAGS=-I${TOPDIR}/include
 LDFLAGS=-lMystring -lMyutils -lBitmask
 LIBPATH=${PWD}
 
-all:sall.outMy
+all:sall.out
 
 sall.out:test.o libMystring.a libMyutils.a libBitmask.a
 	gcc -L${LIBPATH} $< -o $@ ${LDFLAGS} -static
