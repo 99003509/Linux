@@ -1,4 +1,4 @@
-#include "MaxMin.h"
+#include "minmax.h"
 
 int arr1[1000] = {0}, minarray[10] = {0};
 
