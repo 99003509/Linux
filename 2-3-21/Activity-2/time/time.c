@@ -12,7 +12,7 @@ void *task_body_time(void* pv)
   printf("%02d : %02d : %02d \n",curtime->tm_hour, curtime->tm_min, curtime->tm_sec);
 
 }
-void getTime()
+void getCurTime()
 {
   int i, n=10;
   pthread_t ptrarr[n];
