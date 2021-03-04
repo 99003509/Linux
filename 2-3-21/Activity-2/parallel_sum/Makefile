@@ -1,7 +1,8 @@
-#include "time.h"
-
-int main()
-{
-  /* Get the current time*/
-  getTime();
-}
+src = main.c parallel_sum.c
+project = target
+target: $(src)
+	g++ $^ -lgtest -lgtest_main -lpthread -o $@
+run: $(project)
+	./$^
+clean:
+	rm *.out
