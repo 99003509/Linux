@@ -1,6 +1,6 @@
 #include "execlp.h"
 
-void compile()
+void comp()
 {
     pid_t pid=fork();
     int a;
