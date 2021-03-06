@@ -1,7 +1,7 @@
 src = mqsender.c mqrcvr.c
 project = target
 target: $(src)
-	g++ $^ -lgtest -lgtest_main -lpthread -o $@
+	gcc $^ -lrt -lpthread -o $@
 run: $(project)
 	./$^
 clean:
