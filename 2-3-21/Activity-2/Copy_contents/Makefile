@@ -1,7 +1,7 @@
 src = copy.c
 project = target
 target: $(src)
-	g++ $^ -lgtest -lgtest_main -lpthread -o $@
+	gcc $^ -lrt -lgtest -lgtest_main -lpthread -o $@
 run: $(project)
 	./$^
 clean:
