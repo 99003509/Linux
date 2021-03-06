@@ -8,6 +8,7 @@
 #include<string.h>
 #include<semaphore.h>
 
+
 int main()
 {
 	int filesz=4096; //find the length and round
