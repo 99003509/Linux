@@ -1,3 +1,4 @@
+#include"sem_circular.h"
 
 sem_t empty;
 sem_t full;
